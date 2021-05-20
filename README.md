@@ -1,7 +1,8 @@
 # ESLint Essentials with Nx Workspace
 
-I am currently working on a new Angular project. The team is distributed and we are using a shared monorepo and Nx Workspace. When there were just a few developers on the project it wasn't apparent that there were variations of code formatting and structure within the code base. Now add 5, 10, or event 15 more developers to the project.
+A new software project starts pristine - no code, no projects, no files. However, in just a few days or weeks of development there might be some variations of code syntax and formatting. This may be due to different developer styles, IDEs, text editors, tools, or even scaffolding generators. 
 
+It is much easier to gain control and manage the code syntax and formatting rules with a shared monorepo and Nx Workspace. A new Nx Workspace provides ESLint rules and configuration for all projects within a workspace.
 
 ## What Does It Do
 
