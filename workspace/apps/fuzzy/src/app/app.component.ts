@@ -9,9 +9,9 @@ export class AppComponent implements OnInit {
   title = 'fuzzy';
 
   constructor() {
-    console.log('Happy component here.');
+    console.log('Happy component here.' ) ;
   }
   ngOnInit(): void {
-    // throw new Error('Method not implemented.');
+    // throw new Error('Method not implemented.')
   }
 }
