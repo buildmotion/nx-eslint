@@ -132,6 +132,43 @@ Failed tasks:
 
 Notice that the `@angular-eslint/no-empty-lifecycle-method` ESLint rule is an *error* for the empty method in the component file.
 
+## ESLint on Save
+
+Add the following to your Visual Studio Code `settings.json` file
+
+```json
+{
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.alwaysShowStatus": true
+}
+```
+
+## Automated Formatting
+
+Linting and code formatting can work together. Note, linting is focused on syntax rules based ont the target language (e.g., TypeScript, HTML, etc.). While formatting is concerned with other things like using single or double quotes. Formatting is important because it is part of the *consistency* and *readability* factors of your code base.
+
+```json
+{
+  "bracketSpacing": true,
+  "printWidth": 166,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false
+}
+```
+
+Configure Visual Studio Code to automatically format the entire file or modified code. Open your user settings and configure the `Format` section to save.
+
+> There is more to integrate Prettier with ESLint [Integrate ESLint with Prettier](https://nickymeuleman.netlify.app/blog/automagically-lint).
+
 ## Where Are My Linting Rules
 
 Using Nx provides some really nice out-of-the-box configuration and setup for ESLint. There is a set of packages installed for the workspace that provide rules, plugins, and configuration for ESLint to *just work*. Here are the `devDependencies` that enable ESLint to work in the Nx Workspace.

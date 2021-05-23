@@ -1,6 +1,11 @@
 {
-    "git.ignoreLimitWarning": true,
-    "cSpell.words": [
-        "nrwl"
-    ]
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true
 }

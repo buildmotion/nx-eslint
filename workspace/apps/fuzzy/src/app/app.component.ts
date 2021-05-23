@@ -6,14 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title='fuzzy' ;           
+  title = 'fuzzy';
 
   constructor() {
-    console.log('Happy component here.' ) ;         
+    console.log('Happy component here.');
   }
   ngOnInit(): void {
-    throw new Error('Method not implemented.')   
-  }         
+    console.error('Something...');
+    throw new Error('Method not implemented.');
+  }
 }
-
-
